@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -5,3 +6,164 @@
   text-decoration: none;
   list-style-type: none;
 }
+:root {
+  --bg-black: #000000;
+  --bg-yellow: #F27D00;
+  --bg-white: #ffffff;
+}
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+.wrapper {
+  width: 1100px;
+  margin: 0 auto;
+}
+/* *=*=*=*=*=*=*=*=*=*=*=*=* 
+       Etart Header Section
+*=*=*=*=*=*=*=*=*=*=*=*=* */
+/* start header  */
+.header.active {
+  position: fixed;
+  width: 100%;
+  background: var(--bg-white);
+  z-index: 999;
+}
+/* start container-fluid */
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+/* start navbar-brand */
+
+.container-fluid .nav-brand a {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.container-fluid .nav-brand a span {
+  font-size: 2rem;
+  color: var(--bg-yellow);
+  font-weight: bolder;
+  display: inline-block;
+  cursor: pointer;
+}
+.container-fluid .nav-brand img {
+  width: 50px;
+  cursor: pointer;
+}
+/* end navbar-brand */
+/* start navbar-nav */
+.container-fluid .navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+/* start nav-link */
+.container-fluid .navbar-nav .nav-link{
+  font-size: 1.3rem;
+  color: var(--bg-black);
+  font-weight: 600;
+  white-space: nowrap;
+  display: inline-block;
+  line-height: 1rem;
+  cursor: pointer;
+  transition: .3s ease;
+}
+.container-fluid .navbar-nav .nav-link:hover {
+  color: var(--bg-yellow);
+}
+/* end nav-link */
+/* end navbar_nav */
+/* start frofile */
+.container-fluid .profile{
+  border: 1px solid var(--bg-yellow);
+  border-radius: 20px;
+  padding: 2px 5px 2px 2px;
+  cursor: pointer;
+}
+.container-fluid .profile .profile-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.container-fluid .profile .profile-card .fa-user {
+  background-color: rgba(0,0,0,0.2);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--bg-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+.container-fluid .profile .profile-card .fa-angle-down{
+  font-size: 1rem;
+  color: var(--bg-black);
+  display: block;
+  line-height: 2px;
+}
+/* end frofile */
+/* end container-fluid */
+/* end header  */
+/* *=*=*=*=*=*=*=*=*=*=*=*=* 
+       End Header Section
+*=*=*=*=*=*=*=*=*=*=*=*=* */
+
+/* *=*=*=*=*=*=*=*=*=*=*=*=* 
+       Start Banner Section
+*=*=*=*=*=*=*=*=*=*=*=*=* */
+.banner {
+  background: url(/Flight/Image/maldives.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: .5s ease;
+  width: 100%;
+  height: 720px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner .container-fluid .container{
+  width: 100%;
+  background-color: var(--bg-white);
+  border-radius: 10px;
+}
+.banner .flight_hotel ul {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1.3rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding: 25px 25px 0 25px;
+}
+.banner .flight_hotel ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  padding: 8px 20px;
+  color: var(--bg-black);
+  font-size: 1rem;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+}
+.banner .flight_hotel ul li a:focus {
+  border-color:var(--bg-yellow);
+}
+.banner .flight_hotel ul img {
+  width: 30px;
+  height: auto;
+}
+
+
+/* *=*=*=*=*=*=*=*=*=*=*=*=* 
+       End Banner Section
+*=*=*=*=*=*=*=*=*=*=*=*=* */
